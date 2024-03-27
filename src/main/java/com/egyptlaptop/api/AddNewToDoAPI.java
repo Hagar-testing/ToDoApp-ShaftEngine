@@ -1,14 +1,9 @@
 package com.egyptlaptop.api;
 
 
-import com.egyptlaptop.objects.Task;
-import com.shaft.api.RestActions;
+import com.egyptlaptop.models.Task;
 import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-
-import java.util.Arrays;
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
