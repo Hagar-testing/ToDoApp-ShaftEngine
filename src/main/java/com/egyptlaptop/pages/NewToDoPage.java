@@ -1,6 +1,7 @@
 package com.egyptlaptop.pages;
 
 import com.egyptlaptop.constants.PagePathsConstant;
+import com.egyptlaptop.utils.ConfigUtils;
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -21,7 +22,7 @@ public class NewToDoPage {
 
     @Step
     public NewToDoPage load() {
-        driver.browser().navigateToURL(System.getProperty(BASE_URL) + PagePathsConstant.NEW_TODO_PAGE_PATH);
+        driver.browser().navigateToURL(ConfigUtils.getBaseUrl() + PagePathsConstant.NEW_TODO_PAGE_PATH);
         return this;
     }
 

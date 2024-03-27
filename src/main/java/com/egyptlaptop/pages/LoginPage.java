@@ -2,6 +2,7 @@ package com.egyptlaptop.pages;
 
 
 import com.egyptlaptop.constants.LocatorsConstant;
+import com.egyptlaptop.utils.ConfigUtils;
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -22,7 +23,7 @@ public class LoginPage{
 
     @Step("load login page")
     public LoginPage load() {
-        driver.browser().navigateToURL(System.getProperty(BASE_URL));
+        driver.browser().navigateToURL(ConfigUtils.getBaseUrl());
         return this;
     }
 
