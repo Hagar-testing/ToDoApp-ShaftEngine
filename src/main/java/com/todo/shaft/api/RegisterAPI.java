@@ -1,7 +1,8 @@
-package com.egyptlaptop.api;
+package com.todo.shaft.api;
 
-import com.egyptlaptop.utils.UserUtils;
+import com.todo.shaft.utils.UserUtils;
 import com.shaft.driver.SHAFT;
+import com.todo.shaft.constants.ApiPaths;
 import io.restassured.http.ContentType;
 import io.restassured.http.Cookie;
 import io.restassured.response.Response;
@@ -9,8 +10,6 @@ import io.restassured.response.Response;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.egyptlaptop.api.ApiResponseConstants.*;
-import static com.egyptlaptop.constants.ApiPaths.REGISTER_API_PATH;
 import static io.restassured.RestAssured.given;
 
 public class RegisterAPI {
@@ -67,15 +66,15 @@ public class RegisterAPI {
 
         HashMap<String, String> user = UserUtils.generateRandomUserHashMap();
 
-        Response response = api.post(REGISTER_API_PATH)
+        Response response = api.post(ApiPaths.REGISTER_API_PATH)
                 .setRequestBody(user)
                 .setContentType(ContentType.JSON)
                 .setTargetStatusCode(Apis.SUCCESS)
                 .performRequest();
         restAssuredCookies = response.detailedCookies().asList();
-        accessToken = response.path(ACCESS_TOKEN);
-        userId = response.path(USER_ID);
-        firstName = response.path(FIRST_NAME);
+        accessToken = response.path(ApiResponseConstants.ACCESS_TOKEN);
+        userId = response.path(ApiResponseConstants.USER_ID);
+        firstName = response.path(ApiResponseConstants.FIRST_NAME);
         email = user.get("email");
         password = user.get("password");
 

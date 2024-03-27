@@ -1,9 +1,9 @@
-package com.exercice.shaft.testcases;
+package com.todo.shaft.testcases;
 
-import com.egyptlaptop.api.AddNewToDoAPI;
-import com.egyptlaptop.api.Apis;
-import com.egyptlaptop.api.RegisterAPI;
-import com.egyptlaptop.pages.ToDoPage;
+import com.todo.shaft.api.AddNewToDoAPI;
+import com.todo.shaft.api.Apis;
+import com.todo.shaft.api.RegisterAPI;
+import com.todo.shaft.pages.ToDoPage;
 
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Description;
@@ -13,7 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static com.egyptlaptop.utils.CookieUtils.injectCookiesToBrowser;
+import static com.todo.shaft.utils.CookieUtils.injectCookiesToBrowser;
 
 @Feature("Todo Feature")
 public class ToDoTest  {

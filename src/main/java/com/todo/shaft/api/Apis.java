@@ -1,9 +1,7 @@
-package com.egyptlaptop.api;
+package com.todo.shaft.api;
 
-import com.egyptlaptop.utils.ConfigUtils;
+import com.todo.shaft.utils.ConfigUtils;
 import com.shaft.driver.SHAFT;
-
-import static com.egyptlaptop.constants.ConfigConstants.BASE_URL;
 
 public class Apis {
     private SHAFT.API api;

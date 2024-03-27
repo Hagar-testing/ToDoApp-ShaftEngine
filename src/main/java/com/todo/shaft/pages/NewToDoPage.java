@@ -1,20 +1,17 @@
-package com.egyptlaptop.pages;
+package com.todo.shaft.pages;
 
-import com.egyptlaptop.constants.PagePathsConstant;
-import com.egyptlaptop.utils.ConfigUtils;
+import com.todo.shaft.constants.PagePathsConstant;
+import com.todo.shaft.utils.ConfigUtils;
 import com.shaft.driver.SHAFT;
+import com.todo.shaft.constants.LocatorsConstant;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-
-import static com.egyptlaptop.constants.ConfigConstants.BASE_URL;
-import static com.egyptlaptop.constants.LocatorsConstant.NEW_TODO_INPUT;
-import static com.egyptlaptop.constants.LocatorsConstant.SUBMIT_NEW_TASK_BUTTON;
 
 public class NewToDoPage {
 
     private final SHAFT.GUI.WebDriver driver;
-    private final By newToDo_input = By.cssSelector(NEW_TODO_INPUT);
-    private final By submitNewTask_button = By.cssSelector(SUBMIT_NEW_TASK_BUTTON);
+    private final By newToDo_input = By.cssSelector(LocatorsConstant.NEW_TODO_INPUT);
+    private final By submitNewTask_button = By.cssSelector(LocatorsConstant.SUBMIT_NEW_TASK_BUTTON);
 
     public NewToDoPage(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;

@@ -1,8 +1,8 @@
-package com.exercice.shaft.testcases;
+package com.todo.shaft.testcases;
 
-import com.egyptlaptop.api.Apis;
-import com.egyptlaptop.api.RegisterAPI;
-import com.egyptlaptop.pages.LoginPage;
+import com.todo.shaft.api.Apis;
+import com.todo.shaft.api.RegisterAPI;
+import com.todo.shaft.pages.LoginPage;
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;

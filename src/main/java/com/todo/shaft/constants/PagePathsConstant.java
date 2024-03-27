@@ -1,4 +1,4 @@
-package com.egyptlaptop.constants;
+package com.todo.shaft.constants;
 
 public class PagePathsConstant {
     public static final String TODO_PAGE_PATH = "todo";

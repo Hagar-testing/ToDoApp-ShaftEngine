@@ -1,4 +1,4 @@
-package com.egyptlaptop.models;
+package com.todo.shaft.models;
 
 public class Task {
 

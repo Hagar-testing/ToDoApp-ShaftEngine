@@ -1,13 +1,11 @@
-package com.egyptlaptop.pages;
+package com.todo.shaft.pages;
 
-import com.egyptlaptop.constants.LocatorsConstant;
-import com.egyptlaptop.constants.PagePathsConstant;
-import com.egyptlaptop.utils.ConfigUtils;
+import com.todo.shaft.constants.LocatorsConstant;
+import com.todo.shaft.constants.PagePathsConstant;
+import com.todo.shaft.utils.ConfigUtils;
 import com.shaft.driver.SHAFT;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-
-import static com.egyptlaptop.constants.ConfigConstants.BASE_URL;
 
 
 public class ToDoPage  {

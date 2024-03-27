@@ -1,4 +1,4 @@
-package com.egyptlaptop.utils;
+package com.todo.shaft.utils;
 
 import io.qameta.allure.Step;
 import io.restassured.http.Cookie;

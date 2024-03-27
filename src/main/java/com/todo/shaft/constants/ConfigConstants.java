@@ -1,4 +1,4 @@
-package com.egyptlaptop.constants;
+package com.todo.shaft.constants;
 
 public class ConfigConstants {
 

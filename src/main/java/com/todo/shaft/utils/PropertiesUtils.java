@@ -1,4 +1,4 @@
-package com.egyptlaptop.utils;
+package com.todo.shaft.utils;
 
 import java.io.*;
 import java.util.Properties;

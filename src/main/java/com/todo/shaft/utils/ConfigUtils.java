@@ -1,8 +1,8 @@
-package com.egyptlaptop.utils;
+package com.todo.shaft.utils;
 
 import java.util.Properties;
 
-import static com.egyptlaptop.constants.ConfigConstants.*;
+import static com.todo.shaft.constants.ConfigConstants.*;
 
 public class ConfigUtils {
 
