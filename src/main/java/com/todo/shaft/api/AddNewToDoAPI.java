@@ -4,7 +4,11 @@ package com.todo.shaft.api;
 import com.todo.shaft.models.Task;
 import com.shaft.driver.SHAFT;
 import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
 
+import java.util.HashMap;
+
+import static com.todo.shaft.constants.ApiPaths.TASKS_API_PATH;
 import static io.restassured.RestAssured.given;
 
 public class AddNewToDoAPI {
@@ -17,28 +21,14 @@ public class AddNewToDoAPI {
 
     public void addNewToTo(String toDoContent,String token) {
 
-        Task body = new Task(toDoContent,false);
-//
-//        Response response =
-//                given()
-//                        .baseUri(ConfigUtils.getBaseUrl())
-//                        .header("Content-Type", "application/json")
-//                        .body(body)
-//                        .auth().oauth2(token)
-//                        .log().all()
-//                        .when()
-//                        .post(ADD_NEW_TODO_API)
-//                        .then()
-//                        .log().all()
-//                        .extract().response();
-//
-//        if(response.statusCode() != 201){
-//            throw new RuntimeException("Something went wrong in adding todo");
-//        }
+        HashMap<String,String> tasksHashMap = new HashMap<>();
+        tasksHashMap.put("item", toDoContent);
+        tasksHashMap.put("isCompleted", "false");
 
-        api.post("")
-                .setRequestBody(body)
-                .setContentType(ContentType.URLENC)
+        api.post(TASKS_API_PATH)
+                .addHeader("Authorization","Bearer " + token)
+                .setRequestBody(tasksHashMap)
+                .setContentType(ContentType.JSON)
                 .setTargetStatusCode(Apis.SUCCESS)
                 .perform();
 
