@@ -94,8 +94,9 @@
                             <useFile>false</useFile>
                             <encoding>UTF-8</encoding>
                             <argLine>
-                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
+                                -javaagent:"${user.home}/.m2/repository/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
                             </argLine>
+
                             <properties>
                                 <property>
                                     <name>usedefaultlisteners</name>
@@ -147,8 +148,9 @@
                             <useFile>false</useFile>
                             <encoding>UTF-8</encoding>
                             <argLine>
-                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
+                                -javaagent:"${user.home}/.m2/repository/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
                             </argLine>
+
                             <properties>
                                 <property>
                                     <name>usedefaultlisteners</name>
