@@ -37,3 +37,13 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### SHAFT ###
+/execution-summary/
+/extent-reports/
+/allure-results/
+/AutomationExercisePractice.iml
+/generate_allure_report.bat
+generatedReport_*.zip
+/allure-report/index.html
+/allure-report/
